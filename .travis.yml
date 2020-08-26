@@ -15,17 +15,7 @@ matrix:
       go: 1.15.x
       language: go
 
-before_install:
-  - echo $HOME
-  - ls $HOME
-  - echo $PATH
-  - export GOPATH=$HOME/go/
-  - export PATH=$PATH:$GOPATH/bin/
-  - go get -u github.com/kardianos/govendor
-  - go install github.com/kardianos/govendo
-  - go mod vendor
-
-install: contrib/scripts/install-dependencies.sh
+install: make install
 
 git:
   depth: 1000
