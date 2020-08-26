@@ -8,6 +8,8 @@ matrix:
       language: go
 
 before_install:
+  - export GOPATH=$HOME/go
+  - export PATH=$PATH:$GOPATH/bin
   - echo $PATH
   - go get -u github.com/kardianos/govendor
   - go install github.com/kardianos/govendor
