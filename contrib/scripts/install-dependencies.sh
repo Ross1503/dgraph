@@ -2,10 +2,10 @@
 # Make sure to run the script from the dgraph repository root.
 
 # Vendor opencensus.
-rm -rf vendor/go.opencensus.io/
+#rm -rf vendor/go.opencensus.io/
 govendor fetch go.opencensus.io/...@v0.19.2
 # Vendor prometheus.
-rm -rf vendor/github.com/prometheus/
+#rm -rf vendor/github.com/prometheus/
 govendor fetch github.com/prometheus/client_golang/prometheus/...@v0.9.2
 # Vendor gRPC.
 govendor fetch google.golang.org/grpc/...@v1.13.0
