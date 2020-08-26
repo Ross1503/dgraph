@@ -21,9 +21,9 @@ before_install:
   - echo $PATH
   - export GOPATH=$HOME/go/
   - export PATH=$PATH:$GOPATH/bin/
-  - go mod vendor
   - go get -u github.com/kardianos/govendor
   - go install github.com/kardianos/govendo
+  - go mod vendor
 
 install: contrib/scripts/install-dependencies.sh
 
