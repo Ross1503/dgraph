@@ -15,6 +15,13 @@ matrix:
       go: 1.15.x
       language: go
 
+before_install:
+  - export GOPATH=$HOME/go
+  - export PATH=$PATH:$GOPATH/bin
+  - go mod vendor
+  - go get -u github.com/kardianos/govendor
+  - go install github.com/kardianos/govendor
+
 install: make install
 
 git:
