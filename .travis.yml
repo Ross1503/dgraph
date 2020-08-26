@@ -20,9 +20,9 @@ before_install:
   - export PATH=$PATH:$GOPATH/bin
   - go mod vendor
   - go get -u github.com/kardianos/govendor
-  - go install github.com/kardianos/govendor
+  - go install github.com/kardianos/govendo
 
-install: make install
+install: contrib/scripts/install-dependencies.sh
 
 git:
   depth: 1000
