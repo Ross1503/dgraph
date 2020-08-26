@@ -16,6 +16,8 @@ matrix:
       language: go
 
 before_install:
+  - echo $HOME
+  - echo $PATH
   - export GOPATH=$HOME/go
   - export PATH=$PATH:$GOPATH/bin
   - go mod vendor
