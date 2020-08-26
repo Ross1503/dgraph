@@ -7,7 +7,7 @@ matrix:
       go: 1.11.x
       language: go
 
-install: contrib/scripts/install.sh
+install: contrib/scripts/install-dependencies.sh
 
 git:
   depth: 1000
