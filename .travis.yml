@@ -14,7 +14,7 @@ before_install:
   - go get -u github.com/kardianos/govendor
   - go install github.com/kardianos/govendor
 
-install: contrib/scripts/install-dependencies.sh
+install: ./contrib/scripts/install-dependencies.sh
 
 git:
   depth: 1000
