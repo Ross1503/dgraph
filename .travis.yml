@@ -54,7 +54,7 @@ before_script:
 
 script:
 - echo $TRAVIS_EVENT_TYPE
-- echo $TRAVIS_EVENT_TYPE
+- echo $TRAVIS_TAG
 - if [ "$TRAVIS_EVENT_TYPE" == "cron" ] || [  -z "$TRAVIS_TAG" ]; then
     bash contrib/scripts/cover.sh $HOME/build coverage.out || travis_terminate 1;
     goveralls -service=travis-ci -coverprofile=coverage.out || true;
