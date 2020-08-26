@@ -17,9 +17,10 @@ matrix:
 
 before_install:
   - echo $HOME
+  - ls $HOME
   - echo $PATH
-  - export GOPATH=$HOME/go
-  - export PATH=$PATH:$GOPATH/bin
+  - export GOPATH=$HOME/go/
+  - export PATH=$PATH:$GOPATH/bin/
   - go mod vendor
   - go get -u github.com/kardianos/govendor
   - go install github.com/kardianos/govendo
